@@ -24,9 +24,16 @@
 
 // export default App;
 
-import React from "react";
-// import { text } from 'react-native';
+function App(props) {
+  const currDate = new Date();
 
-const HelloWorld = () => { return (<text>Hello world!</text>) }
+  return (
+    <div>
+        <h1>Hello, Sanjay!</h1>
+        <h2>The time now is {currDate.toLocaleTimeString()}.</h2>
+        <h3>Today's date is {currDate.toLocaleDateString()}</h3>
+      </div>
+  );
+}
 
-export default HelloWorld;
+export default App;
